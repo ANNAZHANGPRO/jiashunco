@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="mainLeft">
+        <a>123</a> <a>234</a> <a>345</a> <a>456</a>
+    </div>
+    <script type="text/javascript">
+    var navLi = mainLeft.getElementsByTagName('a');
+    function hy() {
+        for (i = 0; i < navLi.length; i++) {
+            navLi[i].style.backgroundColor = "#FFF";
+        }
+    }
+    for (i = 0; i < navLi.length; i++) {
+        navLi[i].onclick = function() { hy(); this.style.backgroundColor = "red"; }
+    }
+</script>
+</body>
+</html>
+

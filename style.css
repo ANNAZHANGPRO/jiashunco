@@ -1,0 +1,449 @@
+
+/*CSS Document*/
+body{font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height:1.5;}
+img{border:0;}
+.ui-layout-north {}
+#menu ul{margin:0px 320px; padding:0; list-style:none; width:1200px;}
+#menu ul li{background: #eee; height: 37px; line-height:37px;
+   			border-bottom: 1px solid #ccc; text-align:center; border-radius:10px;
+   			float:left; width: 154px; margin-right:10px;}
+#menu ul li a{color:#000; text-decoration: none; display: block; border-radius:10px;
+			  width:154px; height:37px;
+			  background-color: #eee;}
+#menu ul li a:hover {color:blue;
+	                 background:url(file:///G|/工作日志/佳顺公司/mysite/images/css_btn1.png) no-repeat;}
+#menu ul li a #on{ }
+#menu ul li ul li {float:none; width: 154px; margin: 0;}
+#menu ul li ul li{background:none; width: 154px;}
+#menu ul li ul li{background:#000; color: #eee;}
+#menu ul li ul{display:none; width: 150px;}
+#menu ul li.listshow ul{display:block;}
+.clear{clear:both;}
+.wrap{
+	
+	width:1440px;
+	height:40px;
+	margin: 20px auto;
+}
+.northbg{
+	margin: -30px auto -10px -10px;
+	background:url(file:///G|/工作日志/佳顺公司/mysite/images/bg.jpg) no-repeat;
+	width: 1678px;
+	height: 300px ;
+	background-color: pink;
+}
+
+.ui-layout-west{
+	float:left;
+	margin-top:10px;
+	margin-left:-8px;
+	width:310px;
+	height:839px;
+	border-right-color: grey;
+	border-style:solid;
+	border-left-color:#fff;
+	border-bottom-color:#fff;
+	border-top-color:#fff;
+	
+}
+
+.ui-layout-center{
+	float:left;
+	margin:-842px 315px 100px 315px;
+	width: 1040px;
+	height: 839px;
+
+	
+	
+}
+
+.ui-layout-east{
+	float:left;
+	
+	margin:-942px 310px auto 1360px;
+	width: 315px ;
+	height: 839px;
+	border-left-color:#fff;
+	border-bottom-color:#fff;
+	border-right-color:#fff;
+	border-top-color:#fff;
+	border-left-color:grey;
+	border-style:solid;
+}
+
+.ui-layout-south{
+	float:left;
+	width:1678px;
+	height:100px;
+	margin:-99px auto auto -8px;
+	background-color: red;
+}
+.logo {
+	
+	width:200px;
+	height:40px;
+	padding: 10px 5px 5px 5px;
+
+}
+
+.logo a{
+
+
+	font-style:黑体;
+	color:#fff;
+	font-size:24px;
+}
+.memberaction{
+	
+	float:right;
+	margin: -40px 0px 0px 0px;
+
+	width:200px;
+	height: 40px;
+}
+
+.regist{
+	
+	width: 40px;
+	height:40px;
+	line-height:40px;
+
+}
+
+.regist a{
+
+	text-align:center;
+	color:yellow;
+}
+.logon{
+
+	width: 40px;
+	height:40px;
+	line-height:40px;
+	float:left;
+	margin: -40px 0px 0px 40px;
+}
+
+.logon a{
+	text-align:center;
+	color:yellow;
+}
+
+.translation{
+	
+	width:160px;
+	height:40px;
+	line-height:40px;
+	float:left;
+	margin:-40px 0px 0px 80px;
+}
+
+.translation a{
+	color:yellow;
+}
+
+.profile{
+	background-color:#eee;
+	font-size:13px;
+	width:400px;
+	height:450px;
+	border:1px dashed #CACACA;
+
+	border-radius:5px;
+	margin: 10px;
+	padding:10px;
+}
+
+.voices{
+	background-color:#eee;
+	font-size:13px;
+	width:400px;
+	height:450px;
+	border:1px dashed pink;
+
+	border-radius: 5px;
+	margin-top: -482px;
+	margin-left: 450px;
+	padding:10px;
+}
+
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+#dividenline{
+	background: url(images/dividenline.jpg) no-repeat;
+	background-color: red;
+	width:998px;
+	height:5px;
+	margin-left:10px;
+}
+
+#dividenline-BN{
+	background: url(images/dividenline-BN.jpg) no-repeat;
+	width: 998px;
+	height: 50px;
+	margin-left:10px;
+	margin-top:-20px;
+}
+
+#dividenline-BN a{
+	font-family: Calibri, 微软雅黑;
+	font-size:28px;
+	color: #ff6600;
+    margin-left:97px;
+    margin-bottom:-20px;
+    z-index:9999;
+}
+#slider-wrapper {
+    background:url(images/demo-images/slider.png) no-repeat;
+    width:998px;
+    height:392px;
+    margin:0 auto;
+    padding-top:74px;
+    margin-top:0px;
+}
+
+#slider {
+	position:relative;
+    width:618px;
+    height:246px;
+    margin-left:190px;
+	background:url(images/demo-images/loading.gif) no-repeat 50% 50%;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position:absolute;
+	left:260px;
+	bottom:-42px;
+}
+.nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	background:url(images/demo-images/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(images/demo-images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+}
+
+
+/*============================*/
+/*=== Brief News BulletineBoard ===*/
+/*============================*/
+
+#marketprofile{
+	width:340px;
+	height:320px;
+	
+    background: url(images/profileframe.jpg) no-repeat;
+}
+
+
+#marketprofile a, #membernews a, #seasongreeting a{
+	font-family:微软雅黑;
+	font-size:16px;
+	color: #f9bf90;
+	margin-left:45px;
+	margin-top:5px;
+}
+
+#marketprofile p, #membernews p, #seasongreeting p{
+	font-family:微软雅黑;
+	width:300px;
+	height:280px;
+	
+	margin-left:10px;
+	margin-top:5px;
+	text-align: justify; 
+	text-indent: 2em;
+	display:inline-block;
+}
+
+#membernews{
+	width:340px;
+	height:320px;
+	
+    background: url(images/profileframe.jpg) no-repeat;
+    margin-top: -320px;
+    margin-left: 345px;
+}
+
+#seasongreeting{
+	width:340px;
+	height:320px;
+	background:url(images/profileframe.jpg) no-repeat;
+	margin-top: -320px;
+	margin-left: 690px;
+}
+
+
+/*============================*/
+/*=== left sidebar style ===*/
+/*============================*/
+
+.search{
+	background-color:#f9bf90;
+	width:280px;
+	height:50px;
+	margin: 20px 15px auto 15px;
+	border-radius:5px;
+
+}
+
+.search input{
+	width:150px;
+	height:38px;
+	margin-top:5px;
+	margin-left: 5px;
+	font-family: Calibri, 微软雅黑;
+
+}
+
+#searchbutton{
+	width: 100px;
+	height: 38px;
+	margin-top:-42px;
+	margin-left: 180px;
+	font-family: Calibri, 微软雅黑;
+	color: #041A52;
+	background:pink;
+}
+
+.memberarea{
+	
+	width:280px;
+	height:400px;
+	margin:10px 30px auto 16px;
+	background:url(images/memberarea_02.jpg) no-repeat;
+
+
+}
+
+.memberarea legend{
+	font-family:微软雅黑,Calibri;
+	color:#f9bf90;
+	font-size:14px;
+	margin: 20px 10px auto 40px;
+}
+
+.memberarea table{
+	margin:20px 30px auto 30px;
+}
+
+.memberarea input{
+	margin: 2px ;
+}
+
+
+/*============================*/
+/*=== verifycode style     ===*/
+/*============================*/
+
+
+/*============================*/
+/*=== recent project style ===*/
+/*============================*/
+
+.recentprojects {
+	width:  280px;
+	height: 300px;
+	margin: 20px 30px auto 16px;
+	
+	position: absolute;
+}
+
+.recentprojects legend{
+	margin:0px;
+	
+	line-height:30px;
+	font-family: calibri, 微软雅黑;
+	font-size: 26px;
+	color: #f9bf90;
+
+}
+
+#project-1 {
+	margin:10px;
+	background-color: pink;
+	width: 120px;
+	height: 120px;
+    
+
+}
+
+#project-1:hover{
+	background: url(images/demo-images/projecttags.jpg) no-repeat;
+}
+
+#project-2 {
+	margin:-130px 10px auto 140px;
+	background-color: pink;
+	width: 120px;
+	height: 120px;
+
+}
+
+#project-2:hover{
+	background: url(images/demo-images/projecttags.jpg) no-repeat;
+}
+
+#project-3 {
+	margin:10px auto auto 10px;
+	background-color: pink;
+	width: 120px;
+	height: 120px;
+}
+
+#project-3:hover{
+	background:url(images/demo-images/projecttags.jpg) no-repeat;
+}
+
+#project-4 {
+	margin: -120px 10px auto 140px;
+	background-color: pink;
+	width: 120px;
+	height: 120px;
+}
+
+#project-4:hover{
+	background: url(images/demo-images/projecttags.jpg) no-repeat;
+}

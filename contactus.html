@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<HEAD>
+<Meta http-equiv="Content-Type" Content="text/html; Charset=utf-8">
+<TITLE>Layout Example</TITLE>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<SCRIPT type="text/javascript" src="jquery.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="jquery.layout.js"></SCRIPT>
+<SCRIPT type="text/javascript">
+var frontpage='<a href="../index.html">首页</a>'
+var obj=document.getElementById("menu").getElementsByTagName("li");
+/*var objid=document.getElementById("menu").getElementsByTagName("a");*/
+var objid= new Array()
+objid[0]="index"
+objid[1]="company"
+objid[2]="product"
+objid[3]="member"
+objid[4]="joinus"
+objid[5]="blog"
+for(var i=0; i<obj.length; i++){
+    
+    
+    document.getElementById(objid[i]).onclick=displayMenuName()
+function displayMenuName(){
+    document.getElementById("changepage").innerHTML=frontpage+">"+document.getElementById(objid[i]).innerHTML;
+}
+    
+
+
+}
+
+
+
+
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="ui-layout-center">Center
+	
+<div id="menu">
+ <ul>
+    <li><a href="#" id="index">首页</a>
+    
+    </li>
+    <li><a href="#" id="company">公司介绍</a>
+      
+    </li>
+    <li><a href="#" id="product">产品介绍</a>
+      
+    </li>
+    <li><a href="#" id="member">成为会员</a>
+    	
+    </li>
+    <li><a href="#" id="joinus">加入我们</a>
+    	
+    </li>
+    <li><a href="#" id="blog">博客新闻</a>
+    	
+    </li>
+    <div class="clear"></div>
+ </ul>
+</div>
+</DIV>
+<DIV class="ui-layout-north">North
+  <div class="wrap">
+    <div class="logo">
+    </div>
+    <div class="memberaction">
+     <div class="regist">
+     	<a href="#">注册</a>
+     </div>
+     <div class="logon">
+     	<a href="#">登录</a>
+     </div>
+     <div class="translation">
+	     <a href="#">简体中文</a>
+	     <a href="#">繁體中文</a>
+	     <a href="#">English</a>
+	 </div>
+  </div>
+  </div>
+
+</DIV>
+<DIV class="ui-layout-south">South</DIV>
+<DIV class="ui-layout-east">East</DIV>
+<DIV class="ui-layout-west">West</DIV>
+</BODY>
+
+</HTML>

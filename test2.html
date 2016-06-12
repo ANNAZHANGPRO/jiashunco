@@ -1,0 +1,25 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<HEAD>
+<Meta http-equiv="Content-Type" Content="text/html; Charset=utf-8">
+<TITLE>Layout Example</TITLE>
+<SCRIPT type="text/javascript">
+
+$(function(){
+	    var $div_li =$("div.tab_menu ul li");
+	    $div_li.click(function(){
+			$(this).addClass("selected")            //µ±Ç°<li>ÔªËØ¸ßÁÁ
+				   .siblings().removeClass("selected");  //È¥µôÆäËüÍ¬±²<li>ÔªËØµÄ¸ßÁÁ
+            var index =  $div_li.index(this);  // »ñÈ¡µ±Ç°µã»÷µÄ<li>ÔªËØ ÔÚ È«²¿liÔªËØÖÐµÄË÷Òý¡£
+			$("div.tab_box > div")   	//Ñ¡È¡×Ó½Úµã¡£²»Ñ¡È¡×Ó½ÚµãµÄ»°£¬»áÒýÆð´íÎó¡£Èç¹ûÀïÃæ»¹ÓÐdiv 
+					.eq(index).show()   //ÏÔÊ¾ <li>ÔªËØ¶ÔÓ¦µÄ<div>ÔªËØ
+					.siblings().hide(); //Òþ²ØÆäËü¼¸¸öÍ¬±²µÄ<div>ÔªËØ
+		})
+	})
+</script>
+</HEAD>
+
+</body>
+</HTML>

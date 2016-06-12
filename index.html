@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<HEAD>
+<Meta http-equiv="Content-Type" Content="text/html; Charset=utf-8">
+<TITLE>Layout Example</TITLE>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+
+<link rel="stylesheet" type="text/css" href="_style.css" media="screen"/>
+<!--<link rel="stylesheet" type="text/css" href="css/style_nivo.css" media="screen"/>-->
+<link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen"/>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<!--<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>-->
+
+<!--<SCRIPT type="text/javascript" src="jquery.layout.js"></SCRIPT>-->
+
+</HEAD>
+<BODY>
+
+<DIV class="ui-layout-north">
+
+<div class="northbg">
+  <div class="wrap">
+    <div class="logo">
+    <a>上海佳顺有限公司</a>
+    </div>
+    <div class="memberaction">
+     <div class="regist">
+     	<a href="#">注册</a>
+     </div>
+     <div class="logon">
+     	<a href="#">登录</a>
+     </div>
+     <div class="translation">
+	     <a href="#">简体中文</a>
+	     <a href="#">繁體中文</a>
+	     <a href="#">English</a>
+	 </div>
+  </div>
+  <div id="menu">
+ <ul>
+    <li><a href="../mysite/index.html" id="index" >首页</a>
+    </li>
+    <li><a href="../mysite/company.html" id="company" onclick="displayMenuName(1)">公司介绍</a>
+    
+    </li>
+    <li><a href="../mysite/product.html" id="product" onclick="displayMenuName(2)">产品介绍</a>
+      
+    </li>
+    <li><a href="../mysite/member.html" id="member" onclick="displayMenuName(3)">成为会员</a>
+      
+    
+        
+    </li>
+    <li><a href="../mysite/joinus.html" id="joinus" onclick="displayMenuName(4)">加入我们</a>
+        
+    </li>
+    <li><a href="../mysite/blog.html" id="blog" >博客新闻</a>
+        
+    </li>
+    <div class="clear"></div>
+ </ul>
+</div>
+  </div>
+</div>
+</DIV>
+
+<DIV class="ui-layout-west">
+       <div class="search">
+       <input id="search" name="search" placeholder="Search Text here..." size="32" type="text">
+       <input id="searchbutton" onclick="" type="button" value="搜索"></button>
+       </div>
+       <div class="memberarea">
+        <legend>会员登录专区</legend>
+        <table border="0">
+  <tr>
+    <td>用户名:</td>
+    <td><input type="text" id="username" name="username"/></td>
+  </tr>
+  <tr>
+    <td>密码:</td>
+
+    <td><input type="text" id="password" name="password"/></td>
+  </tr>
+  <tr>
+     <th>验证码:</th>
+     <td>
+       <span class="fieldSet">
+          <input type="text" id="verifycode" name="verifycode" class="text captcha" maxlength="4" autocomplete="off">
+          <img id="checkImage" class="captchaImage" src="${pageContect.request.contextPath}/checkImg.action" onclick="change()" title="看不清，换一张">
+          </input>
+       </span>
+     </td>
+  </tr>
+  <tr style="padding-left:30px">
+  <td></td>
+    <td><input type="button" id="logon" value="登录"/>
+    <input type="button" id="regist" value="注册"/></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>会员登录情况:</th>
+    <td></td>
+    
+  </tr>
+  <tr>
+    <td>您登录网站的时间是:</td><td></td>
+  </tr>
+  <tr>
+   <td>当前在线会员人数:</td><td>1234</td></tr>
+   <tr><td>一共有 个会员</td></tr>
+   
+   <tr>
+   <td>您是第 个访客</td>
+   </tr>
+   <tr>
+   <td>您的IP地址是</td></tr>
+  
+</table>
+<table>
+   <tr>
+      <th>今明天气情况</th><td></td>
+   </tr>
+   <tr>
+
+   </tr>
+</table>
+        
+       </div>
+       <div class="recentprojects">
+          <legend>最近项目一览</legend>
+          <div id="project-1"></div>
+          <div id="project-2"></div>
+          <div id="project-3"></div>
+          <div id="project-4"></div>
+
+       </div> 
+</DIV>
+<DIV class="ui-layout-center">
+<div id="changepage"><a href="../index.html">首页</a></div>
+<!-- NIVO SLIDER -->
+
+                <!--<div class="px-slider-wrapper" id="slider">
+                    <div class="px-slider nivoSlider">
+                        <a href="default.htm"><img src="images/demo-images/slider-img-1.jpg" alt="" title="#slider-caption-1" /></a>
+                        <img src="images/demo-images/slider-img-2.jpg" title="#slider-caption-2" alt="" />
+                        <a href="default.htm"><img src="images/demo-images/slider-img-3.jpg" alt="" title="This is a caption demo" /></a>
+                        <img src="images/demo-images/slider-img-4.jpg" alt="" title="This is another caption demo" />
+                        <a href="default.htm"><img src="images/demo-images/slider-img-5.jpg" alt="" title="#slider-caption-3" /></a>
+                    </div>
+
+                    <div id="slider-caption-1" class="nivo-html-caption">
+                        <span class="caption-title">Vivid coloring</span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                    </div>
+                    <div id="slider-caption-2" class="nivo-html-caption">
+                        <span class="caption-title">Sample title</span>
+                        <span>This</span> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+                    </div>
+                    <div id="slider-caption-3" class="nivo-html-caption">
+                        <span class="caption-title">Simple questions</span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>-->
+                <div id="wrapper">
+
+    
+        <a href="http://www.wfh-1d8.com" id="dev7link" title="来参观上海佳顺有限公司" style="font-color: #fff;">产品橱窗</a>
+        <div id="dividenline"></div>
+        <div id="slider-wrapper">
+        
+            <div id="slider" class="nivoSlider">
+                <img src="images/demo-images/toystory.jpg" alt="" />
+                <a href="http://www.wfh-1d8.com"><img src="images/demo-images/up.jpg" alt="" title="佳顺公司的WFH-1D8型光电对边器，立足上海，享誉全球" /></a>
+                <img src="images/demo-images/walle.jpg" alt="" />
+                <img src="images/demo-images/nemo.jpg" alt="" title="#htmlcaption" />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>这就是</strong>佳顺公司<em>WFH-1D8</em>型<a href="http://www.wfh-1d8.com">光电对边器</a>.
+            </div>
+        
+        </div>
+        <div id="dividenline-BN">
+            <a>公司简讯</a>
+            <div id="marketprofile">
+            <a>市场讯息</a>
+            <p style=" width: display:inline-block;">来自上海的市场讯息反映，光电对边器的市场行情看涨。来自上海的市场讯息反映，光电对边器的市场行情看涨.来自上海的市场讯息反映，光电对边器的市场行情看涨。来自上海的市场讯息反映，光电对边器的市场行情看涨。来自上海的市场讯息反映，光电对边器的市场行情看涨。来自上海的市场讯息反映，光电对边器的市场行情看涨。来自上海的市场讯息反映，光电对边器的市场行情看涨。</p>
+            </div>
+            <div id="membernews">
+             <a>会员新闻</a>
+             <p>成为佳顺公司的会员，并且一次购买一套以上，使用微信支付的，可以获得5元返现优惠。成为佳顺公司的会员，并且一次购买一套以上，使用微信支付的，可以获得5元返现优惠。成为佳顺公司的会员，并且一次购买一套以上，使用微信支付的，可以获得5元返现优惠。成为佳顺公司的会员，并且一次购买一套以上，使用微信支付的，可以获得5元返现优惠。</p>
+            </div>
+            <div id="seasongreeting">
+            <a>季节的问候</a>
+            <p>在这个辞旧迎新的日子里，祝福您的事业蒸蒸日上、身体健康、阖家团圆!在这个辞旧迎新的日子里，祝福您的事业蒸蒸日上、身体健康、阖家团圆!在这个辞旧迎新的日子里，祝福您的事业蒸蒸日上、身体健康、阖家团圆!在这个辞旧迎新的日子里，祝福您的事业蒸蒸日上、身体健康、阖家团圆!</p>
+            </div>
+        </div>
+        </div>
+
+
+
+</DIV>
+<DIV class="ui-layout-east">
+
+<DIV class="service_box">
+  <ul class="tab_nav">
+    <li><a href="http://www.wfh-1d8.com"><i class="icon icon_1"></i>在线客服</a></li>
+    <li><a href="http://www.wfh-1d8.com"><i class="icon icon_3"></i></a></li>
+  </ul>
+  <div class="tab_content">
+    <div class="tab_plan">
+      <p class="fs14">在线客服1:<br />
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2267936856&amp;site=qq&amp;menu=yes" class="qq_link"><img border="0" src="http://wpa.qq.com/pa?p=2:2833026848:51" alt="点击这里给我发消息" title="点击这里给我发消息"></a></p>
+      <p class="fs14 mt10">在线客服2:<br />
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2267936856&amp;site=qq&amp;menu=yes" class="qq_link"><img border="0" src="http://wpa.qq.com/pa?p=2:2652113249:51" alt="点击这里给我发消息" title="点击这里给我发消息"></a></p>
+      <p class="fs14 mt10">商务客服:<br />
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2267936856&amp;site=qq&amp;menu=yes" class="qq_link"><img border="0" src="http://wpa.qq.com/pa?p=2:2833026848:51" alt="点击这里给我发消息" title="点击这里给我发消息"></a></p>
+      <p class="mt10">服务时间:<br />
+        9:00-18:00(工作日)<br />
+      </p>
+    </div>
+    <div class="tab_plan" style="display: none;"><img src="images/jsweixin.jpg" alt="佳顺公司微信自助客服" width="120" height="120">
+      <p>扫一扫关注佳顺公司</p>
+      <p>用微信支付，优惠5元</p>
+    </div>
+  </div>
+</DIV>
+
+
+</DIV>
+
+<DIV class="ui-layout-south">South</DIV>
+<SCRIPT type="text/javascript">
+
+$(".service_box .tab_nav li").hover(function(){
+    var i=$(this).index();
+    $(this).addClass("active").siblings().removeClass("active");
+    $(".service_box .tab_plan:eq("+i+")").show().siblings().hide();
+});//这段代码就是让选择的tab_plan出现，没有选择的tab_plan隐藏
+$(function(){
+    var t;
+    $(".service_box").hover(function(){
+        $(".service_box").animate({right:0},300)
+        clearTimeout(t);
+    },function(){
+        t=setTimeout(function(e){
+            $(".service_box").animate({right:"-146px"},300);
+            $(".service_box").find(".tab_nav li").removeClass("active");
+        },1000);
+    });
+});//这段代码用clearTimeout(t)取消setTimeout,setTimeout函数，用1000秒的时间，完成展示.service_box框自动从左面缩回里面-146px，不能太小，不能太大，正好是标签的宽度。
+/*var isTransition=true;
+$(".m_logo").hover(function(){
+    var r=0;
+    if(isTransition){
+        animateTime = setInterval(function(){
+            if (r>=153){
+                clearInterval(animateTime);
+                isTransition=true;
+            }else{
+                isTransition=false;
+                r++;
+                $(".m_logo a").attr("style","-webkit-mask:-webkit-gradient(radial, 45 25, "+r+", 45 25, "+(r+15)+", from(rgb(0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, 0.2)), to(rgb(0, 0, 0)));")
+            };
+        },5);
+    }
+},function(){
+    return;
+});*/
+
+ 
+        $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+
+      function change(){
+    var img1 = document.getElementById("checkImgage");
+    img1.src="${pageContext.request.contextPath}/checkImg.action?"+new Date().getTime();
+  }
+   
+</SCRIPT>
+</BODY>
+
+
+
+
+
+</HTML>

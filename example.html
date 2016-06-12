@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<HEAD>
+<Meta http-equiv="Content-Type" Content="text/html; Charset=utf-8">
+<TITLE>Layout Example</TITLE>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<SCRIPT type="text/javascript" src="jquery.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="jquery.layout.js"></SCRIPT>
+<SCRIPT type="text/javascript">
+$(document).ready(function () {
+	$('body').layout({ applyDefaultStyles: true });
+});
+
+
+
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="ui-layout-center">Center
+	
+<div id="menu">
+ <ul>
+    <li><a href="#" id="on">公司介绍</a>
+    
+    </li>
+    <li><a href="#">产品介绍</a>
+      
+    </li>
+    <li><a href="#">成为会员</a>
+      
+    </li>
+    <li><a href="#">联系我们</a>
+    	
+    </li>
+    <li><a href="#">加入我们</a>
+    	
+    </li>
+    <li><a href="#">博客新闻</a>
+    	
+    </li>
+    <div class="clear"></div>
+ </ul>
+</div>
+</DIV>
+<DIV class="ui-layout-north">North
+  <div class="wrap">
+    <div class="logo">
+    </div>
+    <div class="memberaction">
+     <div class="regist">
+     	<a href="#">注册</a>
+     </div>
+     <div class="logon">
+     	<a href="#">登录</a>
+     </div>
+     <div class="translation">
+	     <a href="#">简体中文</a>
+	     <a href="#">繁體中文</a>
+	     <a href="#">English</a>
+	 </div>
+  </div>
+  </div>
+
+</DIV>
+<DIV class="ui-layout-south">South</DIV>
+<DIV class="ui-layout-east">East</DIV>
+<DIV class="ui-layout-west">West</DIV>
+</BODY>
+
+</HTML>
